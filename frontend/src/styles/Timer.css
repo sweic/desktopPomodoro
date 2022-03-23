@@ -1,0 +1,221 @@
+html body  {
+    margin: 0 auto;
+}
+:root {
+    --lightprodo: #d95550;
+    --lightshortbreak: #4c9195;
+    --lightlongbreak: #457ca3;
+    --lightfontcolor: #ffff;
+    --lightprodobox: #db635e;
+    --lightshortbreakbox: #6aa0a3;
+    --lightlongbreakbox: #5f85a1;
+
+  }
+
+.timer-container {
+    max-width: 800px;
+    
+    margin: 0 auto;
+    height: 50%;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+
+.time-number-c {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+   
+}
+
+.divider {
+    height: 120px;
+}
+
+.time-c {
+
+    max-width:580px; 
+    padding: 1em 3em 1em 3em;
+    transition: background-color 0.5s ease-in-out 0s;
+   text-align: center;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: -75px;
+    z-index: -5000;
+    
+    
+    
+   
+}
+.time-number-c > * {
+    text-align: center;
+    font-size: 10rem;
+    font-weight: bold;
+
+   
+}
+
+
+.start-btn-container {
+    padding-top: 1em;
+    margin: 0 !important;
+    justify-content: center;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    
+}
+.start-btn-container-item {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5em;
+    margin-left: 0em
+    
+    
+}
+
+.toggle-btn {
+    width: 120px;
+    height: 100%;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #ffff;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out 0s;
+
+}
+
+.status-stop:active {
+    transform: translate(0px, 3px);
+}
+
+.status-stop {
+    position: relative;
+    top: -3px;
+}
+.text-ProdogoSeconds {
+    color: var(--lightprodo)
+}
+.text-SbreakSeconds {
+    color: var(--lightshortbreak)
+}
+.text-LbreakSeconds {
+    color: var(--lightlongbreak)
+}
+
+.selection-c {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.ProdogoSecondsbtns:hover {
+    background-color: var(--lightprodo) !important;
+}
+.SbreakSecondsbtns:hover {
+    background-color: var(--lightshortbreak) !important;
+}
+.LbreakSecondsbtns:hover {
+    background-color: var(--lightlongbreak) !important;
+}
+
+.ProdogoSecondsbox {
+    background-color: var(--lightprodobox)!important;
+}
+
+.SbreakSecondsbox {
+    background-color: var(--lightshortbreakbox) !important;
+}
+
+.LbreakSecondsbox {
+    background-color: var(--lightlongbreakbox) !important;
+}
+
+.selection-btn {
+    padding: 8px 20px 8px 20px;
+    border: none;
+    transition: background-color 0.5s  ease-in-out 0s ;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.selection-btn:active {
+    transform: translate(0px, 3px);
+}
+
+.activeProdogoSeconds {
+    background-color: var(--lightprodo) !important;
+    font-weight: bold;
+  
+}
+
+.activeSbreakSeconds {
+    background-color: var(--lightshortbreak) !important;
+    font-weight: bold;
+    
+}
+.activeLbreakSeconds {
+    background-color: var(--lightlongbreak) !important;
+    font-weight: bold;
+    
+}
+
+.settings-btn-icon {
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    border-radius: 1em;
+    cursor: pointer;
+    margin-top: -2px;
+}
+.refresh-icon {
+    margin-top: -10px !important;
+}
+
+
+.rest-time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.blob {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border-radius: 1em;
+    border: 3px white solid;
+}
+
+.filled {
+    background-color: white !important;
+}
+
+.tooltipbox {
+    position: relative;
+}
+.tooltipbox:before {
+    position: absolute;
+    content: attr(data-text);
+    bottom: 120%;
+    left: 27%;
+    font-size: 12px;
+    display: none;
+}
+
+.tooltipbox:hover:before {
+    display: block;
+}

@@ -1,0 +1,60 @@
+:root {
+  --lightprodo: #d95550;
+  --lightshortbreak: #4c9195;
+  --lightlongbreak: #457ca3;
+  --lightfontcolor: #ffff;
+  --animate-delay: 0.5s;
+
+}
+
+.App {
+  height: 100vh;
+  display: block;
+}
+
+.main-container {
+  
+  height: 100vh;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out 0s;
+
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.ProdogoSeconds {
+  background-color: var(--lightprodo);
+}
+
+.SbreakSeconds {
+  background-color: var(--lightshortbreak);
+}
+
+.LbreakSeconds {
+  background-color: var(--lightlongbreak);
+}
+
+
+.loading {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--lightprodo);
+  z-index: 5001;
+}

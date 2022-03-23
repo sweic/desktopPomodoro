@@ -1,0 +1,237 @@
+:root {
+    --lightprodo: #d95550;
+    --lightshortbreak: #4c9195;
+    --lightlongbreak: #457ca3;
+    --lightfontcolor: #ffff;
+    --lightprodobox: #db635e;
+    --lightshortbreakbox: #6aa0a3;
+    --lightlongbreakbox: #5f85a1;
+    --lightinput: rgb(239, 239, 239);
+
+  }
+
+.settings-container {
+  width: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.settings-container-dual {
+  width: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-side {
+  margin-top: -6px;
+}
+
+.settings-btn-container {
+    display: flex;
+    max-width: 800px;
+    padding-right: 2em;
+    gap: 1em;
+    margin: 0 auto;
+    padding-left: 1em;
+    
+}
+
+.settings-modal-container {
+  height: 330px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: black;
+    
+}
+.ReactModal__Content {
+    padding: 0.5em !important;
+    
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.config-btn {
+    
+    border: none;
+    transition: background-color 0.5s  ease-in-out 0s ;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.ProdogoSecondsbtn {
+    background-color: var(--lightprodo);
+}
+
+.SbreakSecondsbtn {
+    background-color: var(--lightshortbreak);
+}
+
+.LbreakSecondsbtn {
+    background-color: var(--lightlongbreak);
+}
+
+.config-btn:hover {
+    color: black;
+}
+
+h4 {
+   margin: 0 auto;
+   font-weight: 400;
+}
+
+.settings-divider {
+    width: 400px;
+    background-color: gray;
+    height: 1px;
+    opacity: 0.5;
+    margin-top: 0.5em;
+}
+
+.timer-config-box {
+    padding-top: 0.4em;
+    padding-left: .1em;
+    padding-right: .2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.timer-config-box input {
+    padding-left:.8em;
+    border: transparent;
+    height: 30px;
+    width: 70px;
+    background-color: var(--lightinput)
+}
+
+p {
+    padding-top: .1em;
+    margin:0;
+    display: inline-block;
+    font-size: 16px;
+    height: 30px !important;
+}
+
+input:focus {
+    border: transparent;
+    outline: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--lightprodo);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--lightprodobox);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .modal-container {
+    margin-top:3em;
+    max-height: 100vh;
+    background-color: white;
+    border-radius: 0.5em;
+    border: white;
+    
+  }
+
+  .pagination-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .modal-container button {
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    padding: 0.5em 1em 0.5em 1em;
+  }
+
+
+  .history-modal-container {
+    max-height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    color: black;
+
+  }
+
+
+  .chart-data-container {
+    margin-top: 1em;
+  }
+
+  .history-modal-btn-container {
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+  }
+
+  .pro-btn:hover {
+    font-weight: bold;
+color: var(--lightprodo)
+  }
